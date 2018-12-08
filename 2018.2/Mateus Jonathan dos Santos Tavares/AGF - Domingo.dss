@@ -1,0 +1,58 @@
+clear
+Set DefaultBaseFrequency=60
+New circuit.Agf69 bus1=barra100 basekv=69 baseMVA= 100 phases=3 R1=0.0090 X1=0.0588 R0=0.0228 X0= 0.2662
+New transformer.TRAFO_1 xhl=11.87 windings=2 %loadloss=0.5 %noloadloss=0.1 %imag=0.5 maxtap=2 mintap=0.8
+~ wdg=1 bus=barra100 kv=69 kva=20000 conn=delta
+~ wdg=2 bus=INICIO_AGF kv=13.8 kva=20000 conn=wye tap=1.03
+
+//Parâmetros Gerais//
+Redirect (Geral\Cabos.dss)
+New Loadshape.solar npts=24 interval=1 pmult=[0 0 0 0 0 0.0698 0.1674 0.279 0.4122 0.5022 0.558 0.5685 0.5441 0.572 0.542 0.5706 0.3348 0.1604 0 0 0 0 0 0 0]
+New Tshape.Tfor npts=24 interval=1 temp =[27 26 25 26 27 27 27 28 28 29 29 30 31 31 31 30 29 28 27 27 27 27 27 27 27]
+!New relay.21I2 MonitoredObj=Line.DISJ_AGF01I2 MonitoredTerm=1 Type=Current Phas
+//Circuito AQZ01I2//
+Redirect (AGF01I2/Trafos.dss)
+Redirect (AGF01I2/Trechos01I2.dss)
+Redirect (AGF01I2/Chaves01I2.dss)
+Redirect (AGF01I2/CurvasdeCarga01I2.dss)
+Redirect (AGF01I2/Cargas01I2Dom.dss)
+Redirect (AGF01I2/Trafos.dss)
+
+
+Set Voltagebases=[69, 13.8, 0.22] 
+Calcvoltagebases
+
+New EnergyMeter.sub element=line.AGF01I2|D_AGF01I2 terminal=1
+New Monitor.sed_power element=line.DISJ_AGF01I2 terminal=1 mode=1 ppolar=no
+New Monitor.sed_current element=line.DISJ_AGF01I2 terminal=1 mode=0  ppolar=1
+
+
+Redirect (Paineis/SistemasSolaresCen3.dss)
+
+set maxiterations=100
+set mode=daily
+set setpsize=1h
+set number=24
+solve
+Buscoords (Geral/AGF_BARRAS.csv)
+set markSwitches=no
+set markTransformers=yes
+set markPVSystem=no
+Set normvmaxpu=1.05
+Set normvminpu=0.95
+Plot Profile
+Set normvminpu=1.05
+Set emergvminpu=0.95
+plot Circuit Voltage  dots=n labels=n subs=n c1=Red c2=Green c3=Yellow 
+Export monitors sed_current
+Export monitors sed_power
+Plot monitor object= sed_current channels=(7 9 11 )
+
+set maxiterations=100
+set mode=faultstudy
+solve
+show f
+Export f
+show loops
+
+//dump

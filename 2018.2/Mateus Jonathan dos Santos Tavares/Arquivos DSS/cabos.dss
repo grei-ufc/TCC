@@ -1,0 +1,70 @@
+New Linecode.CAA_266.8MCM nphases=3 basefreq=60 units=km
+r1=0.2354 !ohms/km
+x1=0.3850 !ohms/km
+r0=0.4130 !ohms/km
+x0=1.5520 !ohms/km
+New Linecode.CAA_1/0AWG nphases=3 basefreq=60 units=km
+r1=0.6955 !ohms/km
+x1=0.4984 !ohms/km
+r0=0.8733 !ohms/km
+x0=2.0219 !ohms/km
+New Linecode.CAA_4AWG nphases=3 basefreq=60 units=km
+r1=1.5835 !ohms/km
+x1=0.4972 !ohms/km
+r0=1.7613 !ohms/km
+x0=2.0214 !ohms/km
+New Linecode.CCN_95 nphases=3 basefreq=60 units=km
+r1=0.2231 !ohms/km
+x1=0.4040 !ohms/km
+r0=0.3991 !ohms/km
+x0=1.9282 !ohms/km
+New Linecode.CCN_70 nphases=3 basefreq=60 units=km
+r1=0.3167 !ohms/km
+x1=0.4167 !ohms/km
+r0=0.4945 !ohms/km
+x0=1.9409 !ohms/km
+New Linecode.CCN_50 nphases=3 basefreq=60 units=km
+r1=0.4120 !ohms/km
+x1=0.4320 !ohms/km
+r0=0.5898 !ohms/km
+x0=1.9563 !ohms/km
+New Linecode.CCN_25 nphases=3 basefreq=60 units=km
+r1=0.8880 !ohms/km
+x1=0.4605 !ohms/km
+r0=1.0658 !ohms/km
+x0=1.9847 !ohms/km
+New Linecode.CCN_16 nphases=3 basefreq=60 units=km
+r1=1.3080 !ohms/km
+x1=0.4802 !ohms/km
+r0=1.4858 !ohms/km
+x0=2.0045 !ohms/km
+New Linecode.CCN_4AWG nphases=3 basefreq=60 units=km
+r1=0.9427 !ohms/km
+x1=0.4625 !ohms/km
+r0=1.1205 !ohms/km
+x0=1.9866 !ohms/km
+New Linecode.CCN_4/0AWG nphases=3 basefreq=60 units=km
+r1=0.1882 !ohms/km
+x1=0.3988 !ohms/km
+r0=0.3660 !ohms/km
+x0=1.9230 !ohms/km
+New Linecode.CALX_50 nphases=3 basefreq=60 units=km
+r1=1.3080 !ohms/km
+x1=0.4802 !ohms/km
+r0=1.4858 !ohms/km
+x0=2.0045 !ohms/km
+New Linecode.SPC_120 nphases=3 basefreq=60 units=km
+r1=0.253 !ohms/km
+x1=0.2682 !ohms/km
+r0=0.4308 !ohms/km
+x0=2.1860 !ohms/km
+New Linecode.SPC_185 nphases=3 basefreq=60 units=km
+r1=0.164 !ohms/km
+x1=0.2522 !ohms/km
+r0=0.3418 !ohms/km
+x0=2.1701 !ohms/km
+New Linecode.SPC_240 nphases=3 basefreq=60 units=km
+r1=0.125 !ohms/km
+x1=0.2409 !ohms/km
+r0=0.3028 !ohms/km
+x0=2.1587 !ohms/km

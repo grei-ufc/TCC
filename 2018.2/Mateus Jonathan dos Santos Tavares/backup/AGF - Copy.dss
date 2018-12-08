@@ -1,0 +1,67 @@
+clear
+Set DefaultBaseFrequency=60
+New circuit.Agf69 bus1=barra69 basekv=69 baseMVA= 100 phases=3 R1=0.42898 X1=2.800126 R0=1.086622 X0= 12.6749
+New transformer.TRAFO_1 xhl=12.59 windings=2 %loadloss=0.5 %noloadloss=0.1 %imag=0.5 maxtap=1.04 mintap=0.85
+~ wdg=1 bus=barra69 kv=69 kva=20000 conn=delta
+~ wdg=2 bus=bus132 kv=13.8 kva=20000 conn=wye tap=1.03
+New Line.inicio bus1=bus132 bus2=INICIO_AGF r1=0.0001 r0=0.0001 x0=0.0001 x1=0.0001
+
+//Parâmetros Gerais//
+Redirect (Geral\Cabos.dss)
+New Loadshape.solar npts=24 interval=1 [0 0 0 0 0 0.0698 0.1674 0.279 0.4122 0.5022 0.558 0.5685 0.5441 0.572 0.542 0.5706 0.3348 0.1604 0 0 0 0 0 0 0]
+
+new TCC_Curve.MIF npts=24 c_array=(1.1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24) 
+~  t_array=(8.5 0.85 0.43 0.28 0.21 0.17 0.14 0.12 0.11 0.09 0.09 0.08 0.07 0.07 0.06 0.06 0.05 0.05 0.05 0.04 0.04 0.04 0.04 0.04)
+
+New TCC_Curve.MIN npts=24 c_array=(1.1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24) 
+~  t_array=(57.38 5.74 2.87 1.91 1.43 1.15 0.96 0.82 0.72 0.64 0.57 0.52 0.48 0.44 0.41 0.38 0.36 0.34 0.32 0.3 0.29 0.27 0.26 0.25)
+
+New Tshape.Tfor npts=24 interval=1 temp =[27 26 25 26 27 27 27 28 28 29 29 30 31 31 31 30 29 28 27 27 27 27 27 27 27]
+New relay.21I2 MonitoredObj=Line.inicio MonitoredTerm=1 Type=Current PhaseTrip=640 PhaseCurve=MIF PhaseInst=3200 GroundTrip=24 GroundCurve= MIN GroundInst=1000 
+//Circuito AQZ01I2//
+Redirect (AGF01I2/Trafos.dss)
+Redirect (AGF01I2/Trechos01I2.dss)
+Redirect (AGF01I2/Chaves01I2.dss)
+Redirect (AGF01I2/CurvasdeCarga01I2.dss)
+//Redirect (AGF01I2/Cargas01I2.dss)
+Redirect (AGF01I2/Cargas01I2Dom.dss)
+
+
+Set Voltagebases=[69, 13.8, 0.22] 
+Calcvoltagebases
+
+New EnergyMeter.sub element=line.AGF01I2|D_AGF01I2 terminal=1
+New Monitor.sed_power element=line.DISJ_AGF01I2 terminal=2 mode=1 ppolar=no
+New Monitor.sed_current element=line.DISJ_AGF01I2 terminal=2 mode=0  ppolar=1
+
+//Redirect (Paineis/SistemasSolaresCen1.dss)
+//Redirect (Paineis/SistemasSolaresCen2.dss)
+//Redirect (Paineis/SistemasSolaresCen3.dss)
+
+set maxiterations=100
+set mode=daily
+set setpsize=1h
+set number=12
+solve
+Buscoords (Geral/AGF_BARRAS.csv)
+set markSwitches=no
+set markTransformers=yes
+set markPVSystem=no
+Set normvmaxpu=1.05
+Set normvminpu=0.95
+Plot Profile
+Set normvminpu=1.05
+Set emergvminpu=0.95
+plot Circuit Voltage  dots=n labels=n subs=n c1=Red c2=Green c3=Yellow 
+Export monitors sed_current
+Export monitors sed_power
+Export Losses
+Plot monitor object= sed_current channels=(7 9 11 )
+
+set maxiterations=100
+set mode=faultstudy
+solve
+show f
+Export f
+
+
