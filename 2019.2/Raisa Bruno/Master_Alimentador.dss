@@ -1,0 +1,67 @@
+
+Clear
+
+Set DefaultBaseFrequency=60
+
+New Circuit.Alimentador basekv=69 pu=1.005 basefreq=60 bus=SourceBus
+
+New Transformer.Sub Phases=3 Windings=2   XHL=(8 1000 /)
+~ wdg=1 bus=SourceBus   conn=delta  kv=69  kva=5000   %r=(.5 1000 /) 
+~ wdg=2 bus=COMT_DMC01C6   conn=wye    kv=13.8  kva=5000   %r=(.5 1000 /) 
+
+Redirect  Linecodes.dss
+Redirect  Lines.dss
+Redirect  trafo.dss
+Redirect LoadShape.dss
+Redirect LoadShapegeracao.dss
+Redirect Load.dss
+
+
+//Definindo a Geração Fotovoltaica---------------------------------------------------------------------------
+!Redirect geracao0_5.dss
+Redirect geracao1.dss
+
+//Definindo o número de iterações---------------------------------------------------------------------------
+set MaxControlIter=100
+
+//Correção do fator de potência-------------------------------------------------------------------------------
+Redirect Capacitor.dss
+
+//Declaração de Monitores --------------------------------------------------------------------------------------
+Redirect Monitores.dss
+New Monitor.MON_0 element=Transformer.Sub terminal=1 mode=1 ppolar=no
+
+
+//Solução----------------------------------------------------------------------------------------------------------------
+set voltagebases=[13.8 0.38]
+calcvoltagebases 
+set mode = daily
+set stepsize = 1h
+set number = 96
+set marktransformer=yes
+solve
+!Plot profile phases=all 
+
+
+// Solução estudo de faltas ---------------------------------------------------------------------------------------
+!solve mode=faultstudy
+!export Faults file1.csv
+
+
+//Definindo a localização da rede-----------------------------------------------------------------------------
+Buscoords  Buscoords_alimentador.dss
+!plot circuit Power Max=2000 dots=n labels=n subs=y C1=Blue subs=yes 1phlinestyle=3
+!plot circuit Voltage Max=200 dots=n labels=n subs=y C1=Blue subs=yes 1phlinestyle=3
+
+
+//Exportando Monitores --------------------------------------------------------------------------------------------
+Redirect MonitoresExports.dss
+Export monitors MON_0
+
+
+
+!Plot monitor object=MON_1 channels=(1 3 5 )
+!Export monitors power
+!Plot monitor object=MON_1 channels=(2 4 6 )
+!Export monitors MON_1_STEPS
+//------------------------------------------------

@@ -1,0 +1,147 @@
+
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html><head>
+      <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+   <!--
+This HTML was auto-generated from MATLAB code.
+To make changes, update the MATLAB code and republish this document.
+      --><title>SE_ENEL_analise_capacitores_e_FP</title><meta name="generator" content="MATLAB 8.2"><link rel="schema.DC" href="http://purl.org/dc/elements/1.1/"><meta name="DC.date" content="2019-11-17"><meta name="DC.source" content="SE_ENEL_analise_capacitores_e_FP.m"><style type="text/css">
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,font,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td{margin:0;padding:0;border:0;outline:0;font-size:100%;vertical-align:baseline;background:transparent}body{line-height:1}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:before,blockquote:after,q:before,q:after{content:'';content:none}:focus{outine:0}ins{text-decoration:none}del{text-decoration:line-through}table{border-collapse:collapse;border-spacing:0}
+
+html { min-height:100%; margin-bottom:1px; }
+html body { height:100%; margin:0px; font-family:Arial, Helvetica, sans-serif; font-size:10px; color:#000; line-height:140%; background:#fff none; overflow-y:scroll; }
+html body td { vertical-align:top; text-align:left; }
+
+h1 { padding:0px; margin:0px 0px 25px; font-family:Arial, Helvetica, sans-serif; font-size:1.5em; color:#d55000; line-height:100%; font-weight:normal; }
+h2 { padding:0px; margin:0px 0px 8px; font-family:Arial, Helvetica, sans-serif; font-size:1.2em; color:#000; font-weight:bold; line-height:140%; border-bottom:1px solid #d6d4d4; display:block; }
+h3 { padding:0px; margin:0px 0px 5px; font-family:Arial, Helvetica, sans-serif; font-size:1.1em; color:#000; font-weight:bold; line-height:140%; }
+
+a { color:#005fce; text-decoration:none; }
+a:hover { color:#005fce; text-decoration:underline; }
+a:visited { color:#004aa0; text-decoration:none; }
+
+p { padding:0px; margin:0px 0px 20px; }
+img { padding:0px; margin:0px 0px 20px; border:none; }
+p img, pre img, tt img, li img { margin-bottom:0px; } 
+
+ul { padding:0px; margin:0px 0px 20px 23px; list-style:square; }
+ul li { padding:0px; margin:0px 0px 7px 0px; }
+ul li ul { padding:5px 0px 0px; margin:0px 0px 7px 23px; }
+ul li ol li { list-style:decimal; }
+ol { padding:0px; margin:0px 0px 20px 0px; list-style:decimal; }
+ol li { padding:0px; margin:0px 0px 7px 23px; list-style-type:decimal; }
+ol li ol { padding:5px 0px 0px; margin:0px 0px 7px 0px; }
+ol li ol li { list-style-type:lower-alpha; }
+ol li ul { padding-top:7px; }
+ol li ul li { list-style:square; }
+
+.content { font-size:1.2em; line-height:140%; padding: 20px; }
+
+pre, tt, code { font-size:12px; }
+pre { margin:0px 0px 20px; }
+pre.error { color:red; }
+pre.codeinput { padding:10px; border:1px solid #d3d3d3; background:#f7f7f7; }
+pre.codeoutput { padding:10px 11px; margin:0px 0px 20px; color:#4c4c4c; }
+
+@media print { pre.codeinput, pre.codeoutput { word-wrap:break-word; width:100%; } }
+
+span.keyword { color:#0000FF }
+span.comment { color:#228B22 }
+span.string { color:#A020F0 }
+span.untermstring { color:#B20000 }
+span.syscmd { color:#B28C00 }
+
+.footer { width:auto; padding:10px 0px; margin:25px 0px 0px; border-top:1px dotted #878787; font-size:0.8em; line-height:140%; font-style:italic; color:#878787; text-align:left; float:none; }
+.footer p { margin:0px; }
+.footer a { color:#878787; }
+.footer a:hover { color:#878787; text-decoration:underline; }
+.footer a:visited { color:#878787; }
+
+table th { padding:7px 5px; text-align:left; vertical-align:middle; border: 1px solid #d6d4d4; font-weight:bold; }
+table td { padding:7px 5px; text-align:left; vertical-align:top; border:1px solid #d6d4d4; }
+
+
+
+
+
+  </style></head><body><div class="content"><pre class="codeinput">clear <span class="string">all</span>
+clc
+
+<span class="comment">%Transformador da Subesta&ccedil;&atilde;o da Enel (k=0);</span>
+f1 = strcat(<span class="string">'1_Resultados_sem_geracao/Alimentador_Mon_mon_0_1.csv'</span>);
+f2 = strcat(<span class="string">'2_Resultados_sem_geracao_com_capacitores/Alimentador_Mon_mon_0_1.csv'</span>);
+f3 = strcat(<span class="string">'3_Resultados_com_geracao_0.5/Alimentador_Mon_mon_0_1.csv'</span>);
+f4 = strcat(<span class="string">'4_Resultados_com_geracao_0.5_com_capacitores/Alimentador_Mon_mon_0_1.csv'</span>);
+f5 = strcat(<span class="string">'5_Resultados_com_geracao_1.0/Alimentador_Mon_mon_0_1.csv'</span>);
+f6 = strcat(<span class="string">'6_Resultados_com_geracao_1.0_com_capacitores/Alimentador_Mon_mon_0_1.csv'</span>);
+
+MON1 = csvread(f1,1,0);
+MON2 = csvread(f2,1,0);
+MON3 = csvread(f3,1,0);
+MON4 = csvread(f4,1,0);
+MON5 = csvread(f5,1,0);
+MON6 = csvread(f6,1,0);
+
+<span class="comment">%C&aacute;lculo Pot&ecirc;ncias Reativas Capacitivas de Corre&ccedil;&atilde;o</span>
+FP_nao_corr = [];
+FP_corrigido = [];
+f_result = fopen(strcat(<span class="string">'RESULTADOS_MATLAB/subestacao_enel.txt'</span>),<span class="string">'w'</span>);
+<span class="keyword">for</span> i=1:96
+    <span class="comment">%Pot&ecirc;ncias reativas capacitivas TRIF&Aacute;SICAS</span>
+    FP_nao_corr1(i) = MON1(i,3)/sqrt(MON1(i,3)^2 + MON1(i,4)^2);
+    FP_corrigido1(i) = MON2(i,3)/sqrt(MON2(i,3)^2 + MON2(i,4)^2);
+
+    FP_nao_corr2(i) = MON3(i,3)/sqrt(MON3(i,3)^2 + MON3(i,4)^2);
+    FP_corrigido2(i) = MON4(i,3)/sqrt(MON4(i,3)^2 + MON4(i,4)^2);
+
+    FP_nao_corr3(i) = MON5(i,3)/sqrt(MON5(i,3)^2 + MON5(i,4)^2);
+    FP_corrigido3(i) = MON6(i,3)/sqrt(MON6(i,3)^2 + MON6(i,4)^2);
+
+    <span class="comment">%Escrevendo para o arquivo TXT</span>
+    fprintf(f_result,<span class="string">'Hora[%d] | FP_SEM_GERACAO: %.3f =&gt; %.3f |  FP_GERACAO_0.5: %.3f =&gt; %.3f |  FP_GERACAO_1.0: %.3f =&gt; %.3f \n'</span>,i,FP_nao_corr1(i),FP_corrigido1(i),FP_nao_corr2(i),FP_corrigido2(i),FP_nao_corr3(i),FP_corrigido3(i));
+<span class="keyword">end</span>
+fclose(f_result);
+</pre><p class="footer"><br><a href="http://www.mathworks.com/products/matlab/">Published with MATLAB&reg; R2013b</a><br></p></div><!--
+##### SOURCE BEGIN #####
+clear all
+clc
+
+%Transformador da Subestação da Enel (k=0);
+f1 = strcat('1_Resultados_sem_geracao/Alimentador_Mon_mon_0_1.csv');
+f2 = strcat('2_Resultados_sem_geracao_com_capacitores/Alimentador_Mon_mon_0_1.csv');
+f3 = strcat('3_Resultados_com_geracao_0.5/Alimentador_Mon_mon_0_1.csv');
+f4 = strcat('4_Resultados_com_geracao_0.5_com_capacitores/Alimentador_Mon_mon_0_1.csv');
+f5 = strcat('5_Resultados_com_geracao_1.0/Alimentador_Mon_mon_0_1.csv');
+f6 = strcat('6_Resultados_com_geracao_1.0_com_capacitores/Alimentador_Mon_mon_0_1.csv');
+
+MON1 = csvread(f1,1,0);
+MON2 = csvread(f2,1,0);
+MON3 = csvread(f3,1,0);    
+MON4 = csvread(f4,1,0);    
+MON5 = csvread(f5,1,0);    
+MON6 = csvread(f6,1,0);    
+
+%Cálculo Potências Reativas Capacitivas de Correção
+FP_nao_corr = [];
+FP_corrigido = [];
+f_result = fopen(strcat('RESULTADOS_MATLAB/subestacao_enel.txt'),'w');
+for i=1:96
+    %Potências reativas capacitivas TRIFÁSICAS
+    FP_nao_corr1(i) = MON1(i,3)/sqrt(MON1(i,3)^2 + MON1(i,4)^2);
+    FP_corrigido1(i) = MON2(i,3)/sqrt(MON2(i,3)^2 + MON2(i,4)^2);
+    
+    FP_nao_corr2(i) = MON3(i,3)/sqrt(MON3(i,3)^2 + MON3(i,4)^2);
+    FP_corrigido2(i) = MON4(i,3)/sqrt(MON4(i,3)^2 + MON4(i,4)^2);
+    
+    FP_nao_corr3(i) = MON5(i,3)/sqrt(MON5(i,3)^2 + MON5(i,4)^2);
+    FP_corrigido3(i) = MON6(i,3)/sqrt(MON6(i,3)^2 + MON6(i,4)^2);
+    
+    %Escrevendo para o arquivo TXT
+    fprintf(f_result,'Hora[%d] | FP_SEM_GERACAO: %.3f => %.3f |  FP_GERACAO_0.5: %.3f => %.3f |  FP_GERACAO_1.0: %.3f => %.3f \n',i,FP_nao_corr1(i),FP_corrigido1(i),FP_nao_corr2(i),FP_corrigido2(i),FP_nao_corr3(i),FP_corrigido3(i));
+end
+fclose(f_result);
+
+
+##### SOURCE END #####
+--></body></html>

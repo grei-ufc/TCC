@@ -1,0 +1,231 @@
+New Capacitor.Cap_1 Bus1=78S1585_sec Phases=3 Kvar=43 kV=0.38 Conn=Delta Basefreq=60 Numsteps=20 states=[0]
+New CapControl.CAP_1_Ctrl Capacitor=Cap_1 element=Transformer.Trafo_01 terminal=1 Type=pf ONsetting=0.92 OFFsetting=-0.92 Delay=0 DelayOFF=0 Deadtime=0
+
+New Capacitor.Cap_2 Bus1=69S0222_sec Phases=3 Kvar=33 kV=0.38 Conn=Delta Basefreq=60 Numsteps=20 states=[0]
+New CapControl.CAP_2_Ctrl Capacitor=Cap_2 element=Transformer.Trafo_02 terminal=1 Type=pf ONsetting=0.92 OFFsetting=-0.92 Delay=0 DelayOFF=0 Deadtime=0
+
+New Capacitor.Cap_3 Bus1=74S0077_sec Phases=3 Kvar=23 kV=0.38 Conn=Delta Basefreq=60 Numsteps=20 states=[0]
+New CapControl.CAP_3_Ctrl Capacitor=Cap_3 element=Transformer.Trafo_03 terminal=1 Type=pf ONsetting=0.92 OFFsetting=-0.92 Delay=0 DelayOFF=0 Deadtime=0
+
+New Capacitor.Cap_4 Bus1=72S0368_sec Phases=3 Kvar=48 kV=0.38 Conn=Delta Basefreq=60 Numsteps=20 states=[0]
+New CapControl.CAP_4_Ctrl Capacitor=Cap_4 element=Transformer.Trafo_04 terminal=1 Type=pf ONsetting=0.92 OFFsetting=-0.92 Delay=0 DelayOFF=0 Deadtime=0
+
+New Capacitor.Cap_5 Bus1=72S0194_sec Phases=3 Kvar=31 kV=0.38 Conn=Delta Basefreq=60 Numsteps=20 states=[0]
+New CapControl.CAP_5_Ctrl Capacitor=Cap_5 element=Transformer.Trafo_05 terminal=1 Type=pf ONsetting=0.92 OFFsetting=-0.92 Delay=0 DelayOFF=0 Deadtime=0
+
+New Capacitor.Cap_6 Bus1=78S1353_sec Phases=3 Kvar=26 kV=0.38 Conn=Delta Basefreq=60 Numsteps=20 states=[0]
+New CapControl.CAP_6_Ctrl Capacitor=Cap_6 element=Transformer.Trafo_06 terminal=1 Type=pf ONsetting=0.92 OFFsetting=-0.92 Delay=0 DelayOFF=0 Deadtime=0
+
+New Capacitor.Cap_7 Bus1=69S0014_sec Phases=3 Kvar=41 kV=0.38 Conn=Delta Basefreq=60 Numsteps=20 states=[0]
+New CapControl.CAP_7_Ctrl Capacitor=Cap_7 element=Transformer.Trafo_07 terminal=1 Type=pf ONsetting=0.92 OFFsetting=-0.92 Delay=0 DelayOFF=0 Deadtime=0
+
+New Capacitor.Cap_8 Bus1=71S1000_sec Phases=3 Kvar=16 kV=0.38 Conn=Delta Basefreq=60
+
+New Capacitor.Cap_9 Bus1=77S0410_sec Phases=3 Kvar=32 kV=0.38 Conn=Delta Basefreq=60 Numsteps=20 states=[0]
+New CapControl.CAP_9_Ctrl Capacitor=Cap_9 element=Transformer.Trafo_09 terminal=1 Type=pf ONsetting=0.92 OFFsetting=-0.92 Delay=0 DelayOFF=0 Deadtime=0
+
+New Capacitor.Cap_10 Bus1=85S5242_sec Phases=3 Kvar=17.9 kV=0.38 Conn=Delta Basefreq=60 Numsteps=20 states=[0]
+New CapControl.CAP_10_Ctrl Capacitor=Cap_10 element=Transformer.Trafo_10 terminal=1 Type=pf ONsetting=0.92 OFFsetting=-0.92 Delay=0 DelayOFF=0 Deadtime=0
+
+New Capacitor.Cap_11 Bus1=81S0792_sec Phases=3 Kvar=15 kV=0.38 Conn=Delta Basefreq=60 Numsteps=20 states=[0]
+New CapControl.CAP_11_Ctrl Capacitor=Cap_11 element=Transformer.Trafo_11 terminal=1 Type=pf ONsetting=0.92 OFFsetting=-0.92 Delay=0 DelayOFF=0 Deadtime=0
+
+New Capacitor.Cap_13 Bus1=79S0511_sec Phases=3 Kvar=19 kV=0.38 Conn=Delta Basefreq=60 Numsteps=20 states=[0]
+New CapControl.CAP_13_Ctrl Capacitor=Cap_13 element=Transformer.Trafo_13 terminal=1 Type=pf ONsetting=0.92 OFFsetting=-0.92 Delay=0 DelayOFF=0 Deadtime=0
+
+New Capacitor.Cap_15 Bus1=83S5521_sec Phases=3 Kvar=43 kV=0.38 Conn=Delta Basefreq=60 Numsteps=20 states=[0]
+New CapControl.CAP_15_Ctrl Capacitor=Cap_15 element=Transformer.Trafo_15 terminal=1 Type=pf ONsetting=0.92 OFFsetting=-0.92 Delay=0 DelayOFF=0 Deadtime=0
+
+New Capacitor.Cap_16 Bus1=77E3025_sec Phases=3 Kvar=21 kV=0.38 Conn=Delta Basefreq=60 Numsteps=20 states=[0]
+New CapControl.CAP_16_Ctrl Capacitor=Cap_16 element=Transformer.Trafo_16 terminal=1 Type=pf ONsetting=0.92 OFFsetting=-0.92 Delay=0 DelayOFF=0 Deadtime=0
+
+New Capacitor.Cap_17 Bus1=63E3115_sec Phases=3 Kvar=3 kV=0.38 Conn=Delta Basefreq=60 
+
+New Capacitor.Cap_18 Bus1=05S0747_sec Phases=3 Kvar=8 kV=0.38 Conn=Delta Basefreq=60 Numsteps=20 states=[0]
+New CapControl.CAP_18_Ctrl Capacitor=Cap_18 element=Transformer.Trafo_18 terminal=1 Type=pf ONsetting=0.92 OFFsetting=-0.92 Delay=0 DelayOFF=0 Deadtime=0
+
+New Capacitor.Cap_19 Bus1=83S4609_sec Phases=3 Kvar=2.4 kV=0.38 Conn=Delta Basefreq=60 Numsteps=20 states=[0]
+New CapControl.CAP_19_Ctrl Capacitor=Cap_19 element=Transformer.Trafo_19 terminal=1 Type=pf ONsetting=0.92 OFFsetting=-0.92 Delay=0 DelayOFF=0 Deadtime=0
+
+New Capacitor.Cap_20 Bus1=83S4919_sec Phases=3 Kvar=11 kV=0.38 Conn=Delta Basefreq=60 Numsteps=20 states=[0]
+New CapControl.CAP_20_Ctrl Capacitor=Cap_20 element=Transformer.Trafo_20 terminal=1 Type=pf ONsetting=0.92 OFFsetting=-0.92 Delay=0 DelayOFF=0 Deadtime=0
+
+New Capacitor.Cap_21 Bus1=79E0022_sec Phases=3 Kvar=46 kV=0.38 Conn=Delta Basefreq=60 Numsteps=20 states=[0]
+New CapControl.CAP_21_Ctrl Capacitor=Cap_21 element=Transformer.Trafo_21 terminal=1 Type=pf ONsetting=0.92 OFFsetting=-0.92 Delay=0 DelayOFF=0 Deadtime=0
+
+New Capacitor.Cap_22 Bus1=45C1074_sec Phases=3 Kvar=12 kV=0.38 Conn=Delta Basefreq=60 Numsteps=20 states=[0]
+New CapControl.CAP_22_Ctrl Capacitor=Cap_22 element=Transformer.Trafo_22 terminal=1 Type=pf ONsetting=0.92 OFFsetting=-0.92 Delay=0 DelayOFF=0 Deadtime=0
+
+New Capacitor.Cap_23 Bus1=45C1190_sec Phases=3 Kvar=21 kV=0.38 Conn=Delta Basefreq=60 Numsteps=20 states=[0]
+New CapControl.CAP_23_Ctrl Capacitor=Cap_23 element=Transformer.Trafo_23 terminal=1 Type=pf ONsetting=0.92 OFFsetting=-0.92 Delay=0 DelayOFF=0 Deadtime=0
+
+New Capacitor.Cap_25 Bus1=83S4784_sec Phases=3 Kvar=16 kV=0.38 Conn=Delta Basefreq=60 Numsteps=20 states=[0]
+New CapControl.CAP_25_Ctrl Capacitor=Cap_25 element=Transformer.Trafo_25 terminal=1 Type=pf ONsetting=0.92 OFFsetting=-0.92 Delay=0 DelayOFF=0 Deadtime=0
+
+New Capacitor.Cap_26 Bus1=29S0769_sec Phases=3 Kvar=17 kV=0.38 Conn=Delta Basefreq=60 Numsteps=20 states=[0]
+New CapControl.CAP_26_Ctrl Capacitor=Cap_26 element=Transformer.Trafo_26 terminal=1 Type=pf ONsetting=0.92 OFFsetting=-0.92 Delay=0 DelayOFF=0 Deadtime=0
+
+New Capacitor.Cap_27 Bus1=46C1038_sec Phases=3 Kvar=5.91 kV=0.38 Conn=Delta Basefreq=60 Numsteps=20 states=[0]
+New CapControl.CAP_27_Ctrl Capacitor=Cap_27 element=Transformer.Trafo_27 terminal=1 Type=pf ONsetting=0.92 OFFsetting=-0.92 Delay=0 DelayOFF=0 Deadtime=0
+
+New Capacitor.Cap_28 Bus1=46C1097_sec Phases=3 Kvar=17 kV=0.38 Conn=Delta Basefreq=60 Numsteps=20 states=[0]
+New CapControl.CAP_28_Ctrl Capacitor=Cap_28 element=Transformer.Trafo_28 terminal=1 Type=pf ONsetting=0.92 OFFsetting=-0.92 Delay=0 DelayOFF=0 Deadtime=0
+
+New Capacitor.Cap_29 Bus1=83S4296_sec Phases=3 Kvar=26 kV=0.38 Conn=Delta Basefreq=60
+
+New Capacitor.Cap_30 Bus1=83S4427_sec Phases=3 Kvar=11 kV=0.38 Conn=Delta Basefreq=60 Numsteps=20 states=[0]
+New CapControl.CAP_30_Ctrl Capacitor=Cap_30 element=Transformer.Trafo_30 terminal=1 Type=pf ONsetting=0.92 OFFsetting=-0.92 Delay=0 DelayOFF=0 Deadtime=0
+
+New Capacitor.Cap_32 Bus1=63E2680_sec Phases=3 Kvar=20 kV=0.38 Conn=Delta Basefreq=60 Numsteps=20 states=[0]
+New CapControl.CAP_32_Ctrl Capacitor=Cap_32 element=Transformer.Trafo_32 terminal=1 Type=pf ONsetting=0.92 OFFsetting=-0.92 Delay=0 DelayOFF=0 Deadtime=0
+
+New Capacitor.Cap_33 Bus1=13S0055_sec Phases=3 Kvar=18 kV=0.38 Conn=Delta Basefreq=60 Numsteps=20 states=[0]
+New CapControl.CAP_33_Ctrl Capacitor=Cap_33 element=Transformer.Trafo_33 terminal=1 Type=pf ONsetting=0.92 OFFsetting=-0.92 Delay=0 DelayOFF=0 Deadtime=0
+
+New Capacitor.Cap_34 Bus1=26S1710_sec Phases=3 Kvar=9 kV=0.38 Conn=Delta Basefreq=60 Numsteps=20 states=[0]
+New CapControl.CAP_34_Ctrl Capacitor=Cap_34 element=Transformer.Trafo_34 terminal=1 Type=pf ONsetting=0.92 OFFsetting=-0.92 Delay=0 DelayOFF=0 Deadtime=0
+
+New Capacitor.Cap_35 Bus1=80L3780_sec Phases=3 Kvar=16 kV=0.38 Conn=Delta Basefreq=60 Numsteps=20 states=[0]
+New CapControl.CAP_35_Ctrl Capacitor=Cap_35 element=Transformer.Trafo_35 terminal=1 Type=pf ONsetting=0.92 OFFsetting=-0.92 Delay=0 DelayOFF=0 Deadtime=0
+
+New Capacitor.Cap_36 Bus1=01L1017_sec Phases=3 Kvar=31 kV=0.38 Conn=Delta Basefreq=60 Numsteps=20 states=[0]
+New CapControl.CAP_36_Ctrl Capacitor=Cap_36 element=Transformer.Trafo_36 terminal=1 Type=pf ONsetting=0.92 OFFsetting=-0.92 Delay=0 DelayOFF=0 Deadtime=0
+
+New Capacitor.Cap_37 Bus1=83L0041_sec Phases=3 Kvar=30 kV=0.38 Conn=Delta Basefreq=60 Numsteps=20 states=[0]
+New CapControl.CAP_37_Ctrl Capacitor=Cap_37 element=Transformer.Trafo_37 terminal=1 Type=pf ONsetting=0.92 OFFsetting=-0.92 Delay=0 DelayOFF=0 Deadtime=0
+
+New Capacitor.Cap_38 Bus1=13S0231_sec Phases=3 Kvar=17.8 kV=0.38 Conn=Delta Basefreq=60 Numsteps=20 states=[0]
+New CapControl.CAP_38_Ctrl Capacitor=Cap_38 element=Transformer.Trafo_38 terminal=1 Type=pf ONsetting=0.92 OFFsetting=-0.92 Delay=0 DelayOFF=0 Deadtime=0
+
+New Capacitor.Cap_39 Bus1=10E0203_sec Phases=3 Kvar=18 kV=0.38 Conn=Delta Basefreq=60 Numsteps=20 states=[0]
+New CapControl.CAP_39_Ctrl Capacitor=Cap_39 element=Transformer.Trafo_39 terminal=1 Type=pf ONsetting=0.92 OFFsetting=-0.92 Delay=0 DelayOFF=0 Deadtime=0
+
+New Capacitor.Cap_40 Bus1=11E0055_sec Phases=3 Kvar=39 kV=0.38 Conn=Delta Basefreq=60 Numsteps=20 states=[0]
+New CapControl.CAP_40_Ctrl Capacitor=Cap_40 element=Transformer.Trafo_40 terminal=1 Type=pf ONsetting=0.92 OFFsetting=-0.92 Delay=0 DelayOFF=0 Deadtime=0
+
+New Capacitor.Cap_42 Bus1=28S0753_sec Phases=3 Kvar=6.5 kV=0.38 Conn=Delta Basefreq=60 Numsteps=20 states=[0]
+New CapControl.CAP_42_Ctrl Capacitor=Cap_42 element=Transformer.Trafo_42 terminal=1 Type=pf ONsetting=0.92 OFFsetting=-0.92 Delay=0 DelayOFF=0 Deadtime=0
+
+New Capacitor.Cap_43 Bus1=95S0624_sec Phases=3 Kvar=10 kV=0.38 Conn=Delta Basefreq=60 Numsteps=20 states=[0]
+New CapControl.CAP_43_Ctrl Capacitor=Cap_43 element=Transformer.Trafo_43 terminal=1 Type=pf ONsetting=0.92 OFFsetting=-0.92 Delay=0 DelayOFF=0 Deadtime=0
+
+New Capacitor.Cap_44 Bus1=94S0858_sec Phases=3 Kvar=9 kV=0.38 Conn=Delta Basefreq=60 Numsteps=10 states=[0]
+New CapControl.CAP_44_Ctrl Capacitor=Cap_44 element=Transformer.Trafo_44 terminal=1 Type=pf ONsetting=0.92 OFFsetting=-0.92 Delay=0 DelayOFF=0 Deadtime=0
+
+New Capacitor.Cap_45 Bus1=09S1808_sec Phases=3 Kvar=9 kV=0.38 Conn=Delta Basefreq=60 Numsteps=10 states=[0]
+New CapControl.CAP_45_Ctrl Capacitor=Cap_45 element=Transformer.Trafo_45 terminal=1 Type=pf ONsetting=0.92 OFFsetting=-0.92 Delay=0 DelayOFF=0 Deadtime=0
+
+New Capacitor.Cap_46 Bus1=42S0542_sec Phases=3 Kvar=10 kV=0.38 Conn=Delta Basefreq=60 Numsteps=10 states=[0]
+New CapControl.CAP_46_Ctrl Capacitor=Cap_46 element=Transformer.Trafo_46 terminal=1 Type=pf ONsetting=0.92 OFFsetting=-0.92 Delay=0 DelayOFF=0 Deadtime=0
+
+New Capacitor.Cap_47 Bus1=42S0780_sec Phases=3 Kvar=42 kV=0.38 Conn=Delta Basefreq=60 Numsteps=20 states=[0]
+New CapControl.CAP_47_Ctrl Capacitor=Cap_47 element=Transformer.Trafo_47 terminal=1 Type=pf ONsetting=0.92 OFFsetting=-0.92 Delay=0 DelayOFF=0 Deadtime=0
+
+New Capacitor.Cap_49 Bus1=83S3738_sec Phases=3 Kvar=7 kV=0.38 Conn=Delta Basefreq=60 Numsteps=20 states=[0]
+New CapControl.CAP_49_Ctrl Capacitor=Cap_49 element=Transformer.Trafo_49 terminal=1 Type=pf ONsetting=0.92 OFFsetting=-0.92 Delay=0 DelayOFF=0 Deadtime=0
+
+New Capacitor.Cap_50 Bus1=83S3810_sec Phases=3 Kvar=19 kV=0.38 Conn=Delta Basefreq=60 Numsteps=20 states=[0]
+New CapControl.CAP_50_Ctrl Capacitor=Cap_50 element=Transformer.Trafo_50 terminal=1 Type=pf ONsetting=0.92 OFFsetting=-0.92 Delay=0 DelayOFF=0 Deadtime=0
+
+New Capacitor.Cap_51 Bus1=15S0131_sec Phases=3 Kvar=21 kV=0.38 Conn=Delta Basefreq=60 Numsteps=20 states=[0]
+New CapControl.CAP_51_Ctrl Capacitor=Cap_51 element=Transformer.Trafo_51 terminal=1 Type=pf ONsetting=0.92 OFFsetting=-0.92 Delay=0 DelayOFF=0 Deadtime=0
+
+New Capacitor.Cap_52 Bus1=63E2789_sec Phases=3 Kvar=22 kV=0.38 Conn=Delta Basefreq=60 
+
+New Capacitor.Cap_53 Bus1=14S0117_sec Phases=3 Kvar=27 kV=0.38 Conn=Delta Basefreq=60 
+
+New Capacitor.Cap_54 Bus1=33E0854_sec Phases=3 Kvar=31 kV=0.38 Conn=Delta Basefreq=60 Numsteps=20 states=[0]
+New CapControl.CAP_54_Ctrl Capacitor=Cap_54 element=Transformer.Trafo_54 terminal=1 Type=pf ONsetting=0.92 OFFsetting=-0.92 Delay=0 DelayOFF=0 Deadtime=0
+
+New Capacitor.Cap_55 Bus1=97E0369_sec Phases=3 Kvar=53 kV=0.38 Conn=Delta Basefreq=60
+
+New Capacitor.Cap_56 Bus1=59S0312_sec Phases=3 Kvar=84 kV=0.38 Conn=Delta Basefreq=60 
+
+New Capacitor.Cap_57 Bus1=96E0275_sec Phases=3 Kvar=39 kV=0.38 Conn=Delta Basefreq=60 Numsteps=20 states=[0]
+New CapControl.CAP_57_Ctrl Capacitor=Cap_57 element=Transformer.Trafo_57 terminal=1 Type=pf ONsetting=0.92 OFFsetting=-0.92 Delay=0 DelayOFF=0 Deadtime=0
+
+New Capacitor.Cap_58 Bus1=93E0402_sec Phases=3 Kvar=53 kV=0.38 Conn=Delta Basefreq=60
+
+New Capacitor.Cap_59 Bus1=91E0306_sec Phases=3 Kvar=54 kV=0.38 Conn=Delta Basefreq=60 
+
+New Capacitor.Cap_60 Bus1=97E0087_sec Phases=3 Kvar=51 kV=0.38 Conn=Delta Basefreq=60 Numsteps=20 states=[0]
+New CapControl.CAP_60_Ctrl Capacitor=Cap_60 element=Transformer.Trafo_60 terminal=1 Type=pf ONsetting=0.92 OFFsetting=-0.92 Delay=0 DelayOFF=0 Deadtime=0
+
+New Capacitor.Cap_61 Bus1=63E1878_sec Phases=3 Kvar=0.23 kV=0.38 Conn=Delta Basefreq=60 
+
+New Capacitor.Cap_62 Bus1=63E1878_sec Phases=3 Kvar=34 kV=0.38 Conn=Delta Basefreq=60 Numsteps=20 states=[0]
+New CapControl.CAP_62_Ctrl Capacitor=Cap_62 element=Transformer.Trafo_62 terminal=1 Type=pf ONsetting=0.92 OFFsetting=-0.92 Delay=0 DelayOFF=0 Deadtime=0
+
+New Capacitor.Cap_63 Bus1=93E0058_sec Phases=3 Kvar=36 kV=0.38 Conn=Delta Basefreq=60 Numsteps=20 states=[0]
+New CapControl.CAP_63_Ctrl Capacitor=Cap_63 element=Transformer.Trafo_63 terminal=1 Type=pf ONsetting=0.92 OFFsetting=-0.92 Delay=0 DelayOFF=0 Deadtime=0
+
+New Capacitor.Cap_64 Bus1=27S0670_sec Phases=3 Kvar=9 kV=0.38 Conn=Delta Basefreq=60 Numsteps=20 states=[0]
+New CapControl.CAP_64_Ctrl Capacitor=Cap_64 element=Transformer.Trafo_64 terminal=1 Type=pf ONsetting=0.92 OFFsetting=-0.92 Delay=0 DelayOFF=0 Deadtime=0
+
+New Capacitor.Cap_65 Bus1=94S0568_sec Phases=3 Kvar=7 kV=0.38 Conn=Delta Basefreq=60 Numsteps=20 states=[0]
+New CapControl.CAP_65_Ctrl Capacitor=Cap_65 element=Transformer.Trafo_65 terminal=1 Type=pf ONsetting=0.92 OFFsetting=-0.92 Delay=0 DelayOFF=0 Deadtime=0
+
+New Capacitor.Cap_66 Bus1=95S0723_sec Phases=3 Kvar=9 kV=0.38 Conn=Delta Basefreq=60 Numsteps=20 states=[0]
+New CapControl.CAP_66_Ctrl Capacitor=Cap_66 element=Transformer.Trafo_66 terminal=1 Type=pf ONsetting=0.92 OFFsetting=-0.92 Delay=0 DelayOFF=0 Deadtime=0
+
+New Capacitor.Cap_67 Bus1=93S0393_sec Phases=3 Kvar=34 kV=0.38 Conn=Delta Basefreq=60 Numsteps=20 states=[0]
+New CapControl.CAP_67_Ctrl Capacitor=Cap_67 element=Transformer.Trafo_67 terminal=1 Type=pf ONsetting=0.92 OFFsetting=-0.92 Delay=0 DelayOFF=0 Deadtime=0
+
+New Capacitor.Cap_68 Bus1=83S3840_sec Phases=3 Kvar=80 kV=0.38 Conn=Delta Basefreq=60 
+
+New Capacitor.Cap_70 Bus1=83S3774_sec Phases=3 Kvar=38 kV=0.38 Conn=Delta Basefreq=60 Numsteps=20 states=[0]
+New CapControl.CAP_70_Ctrl Capacitor=Cap_70 element=Transformer.Trafo_70 terminal=1 Type=pf ONsetting=0.92 OFFsetting=-0.92 Delay=0 DelayOFF=0 Deadtime=0
+
+New Capacitor.Cap_71 Bus1=83S3510_sec Phases=3 Kvar=31 kV=0.38 Conn=Delta Basefreq=60 Numsteps=20 states=[0]
+New CapControl.CAP_71_Ctrl Capacitor=Cap_71 element=Transformer.Trafo_71 terminal=1 Type=pf ONsetting=0.92 OFFsetting=-0.92 Delay=0 DelayOFF=0 Deadtime=0
+
+New Capacitor.Cap_73 Bus1=14S0039_sec Phases=3 Kvar=2.2 kV=0.38 Conn=Delta Basefreq=60 Numsteps=20 states=[0]
+New CapControl.CAP_73_Ctrl Capacitor=Cap_73 element=Transformer.Trafo_73 terminal=1 Type=pf ONsetting=0.92 OFFsetting=-0.92 Delay=0 DelayOFF=0 Deadtime=0
+
+New Capacitor.Cap_75 Bus1=28S0188_sec Phases=3 Kvar=16 kV=0.38 Conn=Delta Basefreq=60 Numsteps=20 states=[0]
+New CapControl.CAP_75_Ctrl Capacitor=Cap_75 element=Transformer.Trafo_75 terminal=1 Type=pf ONsetting=0.92 OFFsetting=-0.92 Delay=0 DelayOFF=0 Deadtime=0
+
+New Capacitor.Cap_76 Bus1=18S0074_sec Phases=3 Kvar=3.7 kV=0.38 Conn=Delta Basefreq=60 
+
+New Capacitor.Cap_77 Bus1=63E2326_sec Phases=3 Kvar=28.3 kV=0.38 Conn=Delta Basefreq=60 Numsteps=20 states=[0]
+New CapControl.CAP_77_Ctrl Capacitor=Cap_77 element=Transformer.Trafo_77 terminal=1 Type=pf ONsetting=0.92 OFFsetting=-0.92 Delay=0 DelayOFF=0 Deadtime=0
+
+New Capacitor.Cap_78 Bus1=63E2333_sec Phases=3 Kvar=27 kV=0.38 Conn=Delta Basefreq=60 Numsteps=20 states=[0]
+New CapControl.CAP_78_Ctrl Capacitor=Cap_78 element=Transformer.Trafo_78 terminal=1 Type=pf ONsetting=0.92 OFFsetting=-0.92 Delay=0 DelayOFF=0 Deadtime=0
+
+New Capacitor.Cap_79 Bus1=63E2148_sec Phases=3 Kvar=29.2 kV=0.38 Conn=Delta Basefreq=60 Numsteps=20 states=[0]
+New CapControl.CAP_79_Ctrl Capacitor=Cap_79 element=Transformer.Trafo_79 terminal=1 Type=pf ONsetting=0.92 OFFsetting=-0.92 Delay=0 DelayOFF=0 Deadtime=0
+
+New Capacitor.Cap_80 Bus1=05E0533_sec Phases=3 Kvar=72 kV=0.38 Conn=Delta Basefreq=60 
+
+New Capacitor.Cap_83 Bus1=73S1037_sec Phases=3 Kvar=79 kV=0.38 Conn=Delta Basefreq=60
+
+New Capacitor.Cap_84 Bus1=93S0513_sec Phases=3 Kvar=4 kV=0.38 Conn=Delta Basefreq=60 
+
+New Capacitor.Cap_86 Bus1=83S3497_sec Phases=3 Kvar=15.6 kV=0.38 Conn=Delta Basefreq=60 Numsteps=20 states=[0]
+New CapControl.CAP_86_Ctrl Capacitor=Cap_86 element=Transformer.Trafo_86 terminal=1 Type=pf ONsetting=0.92 OFFsetting=-0.92 Delay=0 DelayOFF=0 Deadtime=0
+
+New Capacitor.Cap_87 Bus1=83S3280_sec Phases=3 Kvar=54 kV=0.38 Conn=Delta Basefreq=60 
+
+New Capacitor.Cap_88 Bus1=38S2245_sec Phases=3 Kvar=20 kV=0.38 Conn=Delta Basefreq=60 Numsteps=20 states=[0]
+New CapControl.CAP_88_Ctrl Capacitor=Cap_88 element=Transformer.Trafo_88 terminal=1 Type=pf ONsetting=0.92 OFFsetting=-0.92 Delay=0 DelayOFF=0 Deadtime=0
+
+New Capacitor.Cap_89 Bus1=38S2098_sec Phases=3 Kvar=31 kV=0.38 Conn=Delta Basefreq=60 Numsteps=20 states=[0]
+New CapControl.CAP_89_Ctrl Capacitor=Cap_89 element=Transformer.Trafo_89 terminal=1 Type=pf ONsetting=0.92 OFFsetting=-0.92 Delay=0 DelayOFF=0 Deadtime=0
+
+New Capacitor.Cap_90 Bus1=75T0818_sec Phases=3 Kvar=19 kV=0.38 Conn=Delta Basefreq=60 Numsteps=20 states=[0]
+New CapControl.CAP_90_Ctrl Capacitor=Cap_90 element=Transformer.Trafo_90 terminal=1 Type=pf ONsetting=0.92 OFFsetting=-0.92 Delay=0 DelayOFF=0 Deadtime=0
+
+New Capacitor.Cap_91 Bus1=38S2549_sec Phases=3 Kvar=38 kV=0.38 Conn=Delta Basefreq=60 Numsteps=20 states=[0]
+New CapControl.CAP_91_Ctrl Capacitor=Cap_91 element=Transformer.Trafo_91 terminal=1 Type=pf ONsetting=0.92 OFFsetting=-0.92 Delay=0 DelayOFF=0 Deadtime=0
+
+New Capacitor.Cap_92 Bus1=38S2392_sec Phases=3 Kvar=27 kV=0.38 Conn=Delta Basefreq=60 Numsteps=20 states=[0]
+New CapControl.CAP_92_Ctrl Capacitor=Cap_92 element=Transformer.Trafo_92 terminal=1 Type=pf ONsetting=0.92 OFFsetting=-0.92 Delay=0 DelayOFF=0 Deadtime=0
+
+New Capacitor.Cap_93 Bus1=39S0846_sec Phases=3 Kvar=15 kV=0.38 Conn=Delta Basefreq=60 Numsteps=20 states=[0]
+New CapControl.CAP_93_Ctrl Capacitor=Cap_93 element=Transformer.Trafo_93 terminal=1 Type=pf ONsetting=0.92 OFFsetting=-0.92 Delay=0 DelayOFF=0 Deadtime=0
+
+New Capacitor.Cap_94 Bus1=83S2997_sec Phases=3 Kvar=159.1 kV=0.38 Conn=Delta Basefreq=60 Numsteps=20 states=[0]
+New CapControl.CAP_94_Ctrl Capacitor=Cap_94 element=Transformer.Trafo_94 terminal=1 Type=pf ONsetting=0.92 OFFsetting=-0.92 Delay=0 DelayOFF=0 Deadtime=0
+
+New Capacitor.Cap_96 Bus1=39S0886_sec Phases=3 Kvar=114 kV=0.38 Conn=Delta Basefreq=60 
